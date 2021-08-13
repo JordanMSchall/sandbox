@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  
+	supported data types "class" are:
+	
+ -->
+<entities>
+    <entity>
+        <name>simple_table</name>
+        <source>OLTP</source>
+        <destination>DW</destination>
+        <extractStatement>select * from simple_table where is_extracted = 0 order by ident asc</extractStatement>
+        <insertStatement>insert into simple_table values(?,?,?,?)</insertStatement>
+        <columns>
+        	<column name="ident" class="Long"/>
+        	<column name="time_stamp" class="Timestamp"/>
+        	<column name="test_string" class="String"/>
+        	<column name="is_extracted" class="Integer"/>
+        </columns>
+    </entity>
+    <entity>
+        <name>simple_table</name>
+        <source>OLTP</source>
+        <destination>DW</destination>
+        <extractStatement>select * from simple_table where is_extracted = 0 order by ident asc</extractStatement>
+        <insertStatement>insert into simple_table values(?,?,?,?)</insertStatement>
+        <columns>
+        	<column name="ident" class="Long"/>
+        	<column name="time_stamp" class="Timestamp"/>
+        	<column name="test_string" class="String"/>
+        	<column name="is_extracted" class="Integer"/>
+        </columns>
+    </entity>
+    <entity>
+        <name>simple_table</name>
+        <source>OLTP</source>
+        <destination>DW</destination>
+        <extractStatement>select * from simple_table where is_extracted = 0 order by ident asc</extractStatement>
+        <insertStatement>insert into simple_table values(?,?,?,?)</insertStatement>
+        <columns>
+        	<column name="ident" class="Long"/>
+        	<column name="time_stamp" class="Timestamp"/>
+        	<column name="test_string" class="String"/>
+        	<column name="is_extracted" class="Integer"/>
+        </columns>
+    </entity>
+</entities>

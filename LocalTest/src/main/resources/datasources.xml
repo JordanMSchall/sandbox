@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datasources>
+	<source name="OLTP">
+		<url>jdbc:sqlserver://localhost:1433;DatabaseName=TestDB</url>
+		<username>dpsuser</username>
+		<password>htGIKSx3QBDO3Cs!</password>
+	</source>
+	<destination name="DW">
+		<url>jdbc:sqlserver://localhost:1433;DatabaseName=TestDW</url>
+		<username>dpsuser</username>
+		<password>htGIKSx3QBDO3Cs!</password>
+	</destination>
+</datasources>
